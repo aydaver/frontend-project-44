@@ -1,7 +1,8 @@
 import readlineSync from 'readline-sync';
 
-export const greeting = () => {
-    const name = readlineSync.question('May I have your name? ');
-    return (`Hello, ${name}!`);
-}
-    
+const greeting = () => {
+  const name = readlineSync.question('May I have your name? ');
+  return (`Hello, ${name}!`);
+};
+
+export default greeting;
