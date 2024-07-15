@@ -7,13 +7,14 @@ const games = (gameName) => {
   console.log(`Hello, ${name}!`);
   console.log(game[gameName].rules);
   for (let i = 0; i < 3; i += 1) {
-    const [randInt, answer] = game[gameName].run();
-    console.log(`Question: ${randInt}`);
+    const [quest, answer] = game[gameName].run();
+    console.log(`Question: ${quest}`);
     const userAnswer = readlineSync.question('Answer: ');
-    if (userAnswer.toLowerCase() === answer) {
+    if (userAnswer === answer) {
       console.log('Correct!');
     } else {
-      console.log('Not correct');
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.
+Let's try again, ${name}!`);
       return;
     }
   }

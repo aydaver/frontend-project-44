@@ -5,9 +5,9 @@ const getRandomInt = (min, max) => {
 };
 
 const run = () => {
-  const randInt = getRandomInt(1, 100);
-  const answer = randInt % 2 === 0 ? 'yes' : 'no';
-  return [randInt, answer];
+  const quest = getRandomInt(1, 100);
+  const answer = quest % 2 === 0 ? 'yes' : 'no';
+  return [quest, answer];
 };
 
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
