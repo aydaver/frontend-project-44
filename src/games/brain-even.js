@@ -1,8 +1,4 @@
-const getRandomInt = (min, max) => {
-  const minCeiled = Math.ceil(min);
-  const maxFloored = Math.floor(max);
-  return Math.floor(Math.random() * (maxFloored - minCeiled) + minCeiled);
-};
+import getRandomInt from '../utils/getRandomInt.js';
 
 const run = () => {
   const quest = getRandomInt(1, 100);
