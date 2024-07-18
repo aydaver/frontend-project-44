@@ -4,7 +4,7 @@ const run = () => {
   const randInt = getRandomInt(1, 30);
   const progStep = getRandomInt(1, 10);
   const progLength = getRandomInt(6, 15);
-  const dotsPosit = getRandomInt(5, progLength);
+  const dotsPosit = getRandomInt(7, progLength);
   const quest = [randInt];
   for (let i = 0; i < progLength; i += 1) {
     quest.push(quest[i] + progStep);
