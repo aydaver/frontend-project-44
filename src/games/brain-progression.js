@@ -9,10 +9,9 @@ const run = () => {
   for (let i = 0; i < progLength; i += 1) {
     preQuest.push(preQuest[i] + progStep);
   }
-  let answer = preQuest[dotsPosit];
+  const answer = preQuest[dotsPosit];
   const quest = preQuest;
   quest[dotsPosit] = '..';
-  answer = answer.toString();
 
   return [quest, answer];
 };

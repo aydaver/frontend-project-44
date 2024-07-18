@@ -9,7 +9,7 @@ const games = (gameName) => {
     const [quest, answer] = game[gameName].run();
     console.log(`Question: ${quest}`);
     const userAnswer = readlineSync.question('Answer: ');
-    if (userAnswer === answer) {
+    if (userAnswer == answer) {
       console.log('Correct!');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'.
