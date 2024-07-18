@@ -5,14 +5,14 @@ const run = () => {
   const progStep = getRandomInt(1, 10);
   const progLength = getRandomInt(5, 15);
   const dotsPosit = getRandomInt(6, progLength);
-  const quest = [];
+  let quest = [];
   quest.push(randInt);
   for (let i = 0; i < progLength; i += 1) {
     quest.push(quest[i] + progStep);
   }
   const answer = quest[dotsPosit];
   quest[dotsPosit] = '..';
-
+  quest = quest.toString();
   return [quest, answer];
 };
 
