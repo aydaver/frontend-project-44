@@ -9,6 +9,7 @@ const games = (gameName) => {
     const [quest, answer] = game[gameName].run();
     console.log(`Question: ${quest}`);
     const userAnswer = readlineSync.question('Answer: ');
+    // eslint-disable-next-line eqeqeq
     if (userAnswer == answer) {
       console.log('Correct!');
     } else {
