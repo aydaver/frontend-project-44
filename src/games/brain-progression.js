@@ -5,7 +5,8 @@ const run = () => {
   const progStep = getRandomInt(1, 10);
   const progLength = getRandomInt(5, 15);
   const dotsPosit = getRandomInt(6, progLength);
-  const quest = [randInt];
+  const quest = [];
+  quest.push(randInt);
   for (let i = 0; i < progLength; i += 1) {
     quest.push(quest[i] + progStep);
   }
