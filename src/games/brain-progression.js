@@ -9,8 +9,6 @@ const run = () => {
   for (let i = 0; i < progLength; i += 1) {
     preQuest.push(preQuest[i] + progStep);
   }
-  console.log(preQuest);
-  console.log(dotsPosit);
   const answer = preQuest[dotsPosit - 1];
   const quest = preQuest;
   quest[dotsPosit - 1] = '..';
