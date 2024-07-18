@@ -4,7 +4,6 @@ import game from './utils/game-selector.js';
 
 const games = (gameName) => {
   const name = greeting();
-  console.log(`Hello, ${name}!`);
   console.log(game[gameName].rules);
   for (let i = 0; i < 3; i += 1) {
     const [quest, answer] = game[gameName].run();
